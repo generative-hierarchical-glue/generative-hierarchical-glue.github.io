@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="GHIL-Glue: Hierarchical Control with Filtered Subgoal Images.">
+  <meta name="keywords" content="GHIL-Glue">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GHIL-Glue</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">GHIL-Glue: Hierarchical Control with Filtered Subgoal Images</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Anonymous Authors</span>
+              <!-- <span class="author-block">
+                <a href="https://khatch31.github.io" target="_blank" rel="noopener noreferrer">Kyle B. Hatch</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://abalakrishna123.github.io" target="_blank" rel="noopener noreferrer">Ashwin Balakrishna</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.oiermees.com" target="_blank" rel="noopener noreferrer">Oier Mees</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://suraj-nair-1.github.io" target="_blank" rel="noopener noreferrer">Suraj Nair</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://seohong.me" target="_blank" rel="noopener noreferrer">Seohong Park</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://wulfebw.github.io" target="_blank" rel="noopener noreferrer">Blake Wulfe</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://mashaitkina.weebly.com" target="_blank" rel="noopener noreferrer">Masha Itkina</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://ben-eysenbach.github.io" target="_blank" rel="noopener noreferrer">Benjamin Eysenbach</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://people.eecs.berkeley.edu/~svlevine" target="_blank" rel="noopener noreferrer">Sergey Levine</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://tkollar.github.io" target="_blank" rel="noopener noreferrer">Thomas Kollar</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.benburchfiel.com" target="_blank" rel="noopener noreferrer">Benjamin Burchfiel</a><sup>1</sup>,
+              </span> -->
+          </div>
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Toyota Research Institute,</span>
+            <span class="author-block"><sup>2</sup>UC Berkeley</span>
+            <span class="author-block"><sup>3</sup>Princeton University</span>
+          </div> -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/pdfs/paper.pdf" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <!-- <a href="./static/pdfs/paper.pdf"  target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=3z8n1PWBFEA" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/kyle-hatch-tri/ghil-glue" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/3z8n1PWBFEA?rel=0&amp;showinfo=0"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </video>
+      </div> -->
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">GHIL-Glue</span> provides a simple way to effectively "glue together" 
+        language-conditioned video prediction models with low-level control policies for hierarchical imitation learning, significantly improving the performance of existing methods.
+      </h2>
+    </div>
+  </div>
+  <!-- Abstract. -->
+  <div class="columns is-centered has-text-centered">
+    <!-- <div class="column is-four-fifths"> -->
+      <div class="column is-three-fifths">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+          <font size="+2">Image and video generative models that are pre-trained on Internet-scale data can 
+            greatly increase the generalization capacity of robot learning systems. These models can
+            function as high-level planners, generating intermediate subgoals for low-level goal-conditioned policies to reach. However,
+            the performance of these systems can be greatly bottlenecked
+            by the interface between generative models and low-level
+            controllers. For example, generative models may predict photorealistic yet physically infeasible frames that confuse low-level
+            policies. Low-level policies may also be sensitive to subtle visual
+            artifacts in generated goal images. This paper addresses these
+            two facets of generalization, providing an interface to effectively
+            “glue together” language-conditioned image or video prediction
+            models with low-level goal-conditioned policies. Our method,
+            Generative Hierarchical Imitation Learning-Glue (GHIL-Glue),
+            filters out subgoals that do not lead to task progress and improves the robustness of goal-conditioned policies to generated
+            subgoals with harmful visual artifacts. GHIL-Glue achieves a
+            new state-of-the-art on the CALVIN simulation benchmark for
+            policies using observations from a single RGB camera. GHIL-Glue also outperforms other generalist robot policies across
+            3/4 language-conditioned manipulation tasks testing zero-shot
+            generalization in physical experiments.</font>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/2024-06-11_17-14-12_annotated.webm"
+                    type="video/webm">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/2024-06-11_17-26-30_annotated.webm"
+                    type="video/webm">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/2024-06-11_17-55-14_annotated.webm"
+                    type="video/webm">
+          </video>
+        </div>
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/2024-06-11_17-14-12_annotated.webm"
+                    type="video/webm">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/2024-06-11_17-26-30_annotated.webm"
+                    type="video/webm">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/2024-06-11_17-55-14_annotated.webm"
+                    type="video/webm">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">GHIL-Glue</span> generalizes zero-shot to unseen robot table-top manipulation tasks and 
+        shows robustness to distractor objects in cluttered scenes. The top frames show subgoal images generated by 
+        the video prediction model, and the bottom frames show the RGB observations obtained by executing the low-level goal-reaching policy.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <!-- <h2 class="title is-3">Animation</h2> -->
+
+        <!-- Re-rendering. -->
+        <!-- <h3 class="title is-3">Hierarchical Control</h3>
+        <div class="content has-text-justified">
+          <p>
+            <span class="dnerf">GHIL-Glue</span> can be applied to existing hierarchical policy methods that use video prediction models.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/hierarchical.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+        </div> -->
+        <!--/ Re-rendering. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-3">Hierarchical Control</h3>
+        <div class="content has-text-justified">
+          <p>
+            <span class="dnerf">GHIL-Glue</span> can be applied to existing hierarchical imitation learning methods that use video prediction models.
+            <span class="dnerf">GHIL-Glue</span> filters out generated subgoal images that do not make task progress and 
+            trains low-level goal reaching policies to be robust to hallucinated artifacts in generated subgoal images. 
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <!-- <img src="./static/images/overviewfig.png" -->
+          <img src="./static/images/method3.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 width="70%" />
+        </div>
+        <!--/ Re-rendering. -->
+        
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-3">Improving subgoal quality</h3>
+        <div class="content has-text-justified">
+          <p>
+            <span class="dnerf">GHIL-Glue</span> reduces dithering behavior in hierarchical policy methods and makes policies robust to hallucinated artifacts.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/qualitative4.2.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 width="100%" />
+        </div>
+        <!--/ Re-rendering. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-3">Zero-shot generalization</h3>
+        <div class="content has-text-justified">
+          <p>
+            Applying <span class="dnerf">GHIL-GLUE</span> to existing hierarchical policy methods achieves state-of-the-art zero-shot generalization performance on both real and simulated robotics benchmarks.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/domains4.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 width="70%" />
+        </div>
+        <!--/ Re-rendering. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-3">Quantitative Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            <span class="dnerf">GHIL-Glue</span> achieves state-of-the-art performance on the <a href="http://calvin.cs.uni-freiburg.de" target="_blank" rel="noopener noreferrer">CALVIN benchmark</a>
+             as well as on 5 physical environments based on the <a href="https://rail-berkeley.github.io/bridgedata" target="_blank" rel="noopener noreferrer">Bridge V2</a> robot platform.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/results2.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 width="100%" />
+        </div>
+        <!--/ Re-rendering. -->
+        
+        
+
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{anonymous2024ghilglue
+  author    = {Anonymous Authors},
+  title     = {GHIL-Glue: Hierarchical Control with Filtered Subgoal Images},
+  journal   = {Under Review},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/pdfs/paper.pdf" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <!-- <a class="icon-link" href="https://github.com/kyle-hatch-tri"  target="_blank" rel="noopener noreferrer" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/"  target="_blank" rel="noopener noreferrer">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is based off of source code from <a href="https://nerfies.github.io"  target="_blank" rel="noopener noreferrer">nerfies.github.io</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
