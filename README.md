@@ -1,12 +1,12 @@
-# VideoGlue
+# GHIL-Glue
 
-This is the repository that contains source code for the [VideoGlue website](https://videoglue.github.io).
+This is the repository that contains source code for the [GHIL-Glue website](https://generative-hierarchical-glue.github.io/).
 
 If you find VideoGlue useful for your work please cite:
 ```
-@article{hatch2024videoglue
-  author    = {Hatch, Kyle B. and Balakrishna, Ashwin and Mees, Oier and Nair, Surajf, and Park, Seohong, and Wulfe, Blake and Itkina, Masha and Eysenbach, Benjamin and Levine, Sergey and Kollar, Thomas, and Burchfiel, Benjamin},
-  title     = {Video Glue: Strengthening the Interface between Video Prediction and Low-Level Control for Hierarchical Imitation Learning},
+@article{anonymous2024videoglue
+  author    = {Anonymous Authors},
+  title     = {GHIL-Glue: Hierarchical Control with Filtered Subgoal Images},
   journal   = {Under Review},
   year      = {2024},
 }
